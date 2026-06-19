@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hanna & Arshad - Wedding Invitation</title>
+    <meta name="description" content="A luxury wedding invitation for Hanna and Arshad.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Aref+Ruqaa:wght@400;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section class="envelope-gate" id="gate" aria-label="Open the invitation">
+      <div class="gate__image" role="img" aria-label="Ivory wedding envelope with gold wax seal"></div>
+      <button class="gate__button" type="button" id="openInvitation">✦ Please open ✦</button>
+    </section>
+
+    <main class="site-shell" id="invitation" aria-live="polite">
+      <section class="hero-section section-pad">
+        <div class="container hero__content reveal">
+          <p class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+          <p class="translation">In the name of Allah, the Most Gracious, the Most Merciful</p>
+          <p class="eyebrow hero__eyebrow">Together with their families</p>
+          <div class="hero__couple" aria-label="Hanna and Arshad">
+            <h1>Hanna</h1>
+            <span>&amp;</span>
+            <h1 class="name--groom"><span class="name-initial">A</span>rshad</h1>
+          </div>
+          <p class="hero__mystery">A little secret waits below</p>
+        </div>
+      </section>
+
+      <section class="quote-section section-pad">
+        <div class="container narrow reveal">
+          <figure class="couple-photo-frame" aria-label="Hanna and Arshad wedding portrait">
+            <img src="assets/couple-sample.png" alt="Wedding portrait of Hanna and Arshad">
+          </figure>
+          <p class="quote">“A promise made softly, a lifetime held beautifully.”</p>
+        </div>
+      </section>
+
+      <section class="date-section section-pad">
+        <div class="container">
+          <p class="section-script">The Big Day</p>
+          <article class="date-card scratch-card reveal" id="dateScratchCard">
+            <div class="scratch-card__content" aria-live="polite">
+              <span>Saturday</span>
+              <strong>September 12, 2026</strong>
+            </div>
+            <canvas class="scratch-card__canvas" id="dateScratchCanvas" aria-label="Scratch to reveal the wedding date"></canvas>
+            <p class="scratch-card__hint"><small>A little secret</small><span>Reveal date</span></p>
+            <div class="scratch-card__sparkles" aria-hidden="true"></div>
+          </article>
+          <p class="scroll-note">Scroll down for more</p>
+        </div>
+      </section>
+
+      <section class="countdown-section section-pad">
+        <div class="container narrow center">
+          <p class="eyebrow">The celebration begins in</p>
+          <h2>Counting down every moment</h2>
+          <div class="countdown reveal" id="countdown" aria-label="Countdown to the wedding">
+            <div><strong data-unit="days">00</strong><span>d</span></div>
+            <i>:</i>
+            <div><strong data-unit="hours">00</strong><span>h</span></div>
+            <i>:</i>
+            <div><strong data-unit="minutes">00</strong><span>m</span></div>
+            <i>:</i>
+            <div><strong data-unit="seconds">00</strong><span>s</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="details-section section-pad">
+        <div class="container">
+          <p class="eyebrow">The celebration</p>
+          <h2 class="section-title">Wedding Details</h2>
+          <div class="details-grid">
+            <article class="detail-card reveal">
+              <div class="detail-card__icon">⌖</div>
+              <h3>Location</h3>
+              <p>Deluxe Convention Centre<br>Pathappiriyam</p>
+              <a href="https://maps.google.com/?q=Deluxe+Convention+Centre+Pathappiriyam" target="_blank" rel="noreferrer">Get Directions</a>
+            </article>
+            <article class="detail-card reveal">
+              <div class="detail-card__icon">◷</div>
+              <h3>Time</h3>
+              <p>10:00 AM to 3:00 PM</p>
+              <small>Indian Standard Time</small>
+            </article>
+            <article class="detail-card reveal">
+              <div class="detail-card__icon">✧</div>
+              <h3>Date</h3>
+              <p>Saturday<br>September 12, 2026</p>
+              <a id="calendarLink" href="#" download="hanna-arshad-wedding.ics">Add to Calendar</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="schedule-section section-pad">
+        <div class="container narrow">
+          <p class="eyebrow">The journey</p>
+          <h2 class="section-title">Event Schedule</h2>
+          <div class="timeline" aria-label="Wedding day schedule">
+            <article class="timeline__item reveal from-left">
+              <time>10:00 AM</time>
+              <h3>Guest Arrival</h3>
+              <p>A warm welcome for everyone we love.</p>
+            </article>
+            <article class="timeline__item reveal from-right">
+              <time>10:30 AM</time>
+              <h3>Nikkah Ceremony</h3>
+              <p>The sacred union begins.</p>
+            </article>
+            <article class="timeline__item reveal from-left">
+              <time>12:00 PM</time>
+              <h3>Lunch</h3>
+              <p>A celebratory feast shared together.</p>
+            </article>
+            <article class="timeline__item reveal from-right">
+              <time>3:00 PM</time>
+              <h3>Farewell</h3>
+              <p>Parting with prayers, joy, and gratitude.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="rsvp-section section-pad">
+        <div class="container form-wrap">
+          <p class="eyebrow">Be our guest</p>
+          <h2 class="section-title">RSVP</h2>
+          <form class="custom-form reveal" id="rsvpForm">
+            <label>
+              Full Name
+              <input type="text" name="name" placeholder="Your full name" required>
+            </label>
+            <fieldset>
+              <legend>No. of Guests</legend>
+              <div class="segmented">
+                <label><input type="radio" name="guests" value="1" checked><span>1</span></label>
+                <label><input type="radio" name="guests" value="2"><span>2</span></label>
+                <label><input type="radio" name="guests" value="3"><span>3</span></label>
+                <label><input type="radio" name="guests" value="4"><span>4</span></label>
+                <label><input type="radio" name="guests" value="5+"><span>5+</span></label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Response</legend>
+              <div class="response-options">
+                <label><input type="radio" name="response" value="Attending" checked><span>Attending</span></label>
+                <label><input type="radio" name="response" value="May be"><span>May be</span></label>
+                <label><input type="radio" name="response" value="Can't make it"><span>Can't make it</span></label>
+              </div>
+            </fieldset>
+            <button class="primary-button" type="submit">Confirm via WhatsApp</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="blessings-section section-pad">
+        <div class="container form-wrap">
+          <p class="eyebrow">Send your love</p>
+          <h2 class="section-title">Blessings &amp; Wishes</h2>
+          <form class="custom-form reveal" id="blessingForm">
+            <label>
+              Your Name
+              <input type="text" name="blessingName" placeholder="Your name" required>
+            </label>
+            <label>
+              Write your blessing or message
+              <textarea name="message" placeholder="Wishing you a lifetime of happiness..." required></textarea>
+            </label>
+            <button class="primary-button" type="submit">Send Blessing</button>
+          </form>
+          <div class="wishes reveal" id="wishes">
+            <h3>Recent Blessings</h3>
+            <article>
+              <p>“May your home always be filled with mercy, laughter, and peace.”</p>
+              <span>Family &amp; Friends</span>
+            </article>
+            <article>
+              <p>“Wishing you both a beautiful beginning and a lifetime of companionship.”</p>
+              <span>With love</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="gift-section section-pad">
+        <div class="container narrow reveal">
+          <span class="ornament">✦</span>
+          <h2>A Token of Love</h2>
+          <p>Your presence and prayers are the greatest gift for us.</p>
+          <p class="signature-line">With love, Hanna &amp; Arshad</p>
+        </div>
+      </section>
+
+      <footer class="footer-section">
+        <p class="footer-names">Hanna ♥ Arshad</p>
+        <p>September 12, 2026</p>
+        <p class="hashtag">#HannaArshad2026</p>
+      </footer>
+    </main>
+
+    <audio id="weddingMusic" src="audio.mp3" preload="auto" loop></audio>
+
+    <button class="music-toggle" type="button" id="musicToggle" aria-label="Toggle wedding music">
+      <span></span>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
