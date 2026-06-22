@@ -1,0 +1,19 @@
+{
+  "name": "hanna-weds-arshad",
+  "version": "1.0.0",
+  "description": "A luxury wedding invitation for Hanna and Arshad",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build required'"
+  },
+  "keywords": [
+    "wedding",
+    "invitation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
